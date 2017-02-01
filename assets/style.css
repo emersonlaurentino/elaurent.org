@@ -1,6 +1,7 @@
 html, body {
     color: #EEE;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    height: 100%;
 }
 a {
     color: #666;
@@ -15,7 +16,6 @@ a:hover {
     position: relative;
     max-width: 1200px;
     width: 100%;
-    padding: 0 20px;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -25,14 +25,26 @@ a:hover {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.title {
+    color: #000;
+    font-weight: 400;
 }
 .footer {
-    padding: 20px 0;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    bottom: 0;
     color: #666;
+    display: flex;
     font-size: 12px;
+    justify-content: space-between;
+    left: 0;
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
 }
 .footer p {
     margin: 0;
@@ -40,8 +52,10 @@ a:hover {
 .socialIcons {
     display: flex;
     align-items: center;
-    margin: 150px 0;
     justify-content: center;
+    position: absolute;
+    top: calc(50% - 28.5px);
+    left: calc(50% - 238px);
 }
 .socialIcon {
     font-size: 50px;
